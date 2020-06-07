@@ -1,0 +1,15 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /eureka
+
+spring:
+    application:
+      name: dream-eureka
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: false
+    service-url:
+      defaultZone:  http://localhost:9090/eureka/eureka
